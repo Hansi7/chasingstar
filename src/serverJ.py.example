@@ -1,0 +1,13 @@
+import requests
+
+token = '这个是方糖的token'
+
+interface = 'https://sc.ftqq.com/这个是你的方糖的token.send?text={}&desp={}'
+
+
+def send_message(title, content):
+    requests.get(interface.format(title, content))
+
+
+if __name__ == '__main__':
+    send_message('jkhkjhkjhk', 'http://baidu.com/234234234')
